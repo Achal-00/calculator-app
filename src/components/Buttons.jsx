@@ -32,7 +32,6 @@ const Buttons = (props) => {
         className="del"
         onClick={() => {
           if (String(calc)[1] === undefined) {
-            console.log("in here");
             setCalc("0");
           } else {
             setCalc((prev) => String(prev).slice(0, -1));
